@@ -1,0 +1,25 @@
+/*---------------------------------------------------------Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Quicksand:wght@300;500;700&display=swap');
+
+/* font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Quicksand', sans-serif; */
+
+/*---------------------------------------------------------Include element's padding in sum of width and height*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*---------------------------------------------------------Layout box styles*/
+.box-1 {
+    background-color: red;
+}
+
+.box-2 {
+    background-color: green;
+}
+
+.box-3 {
+    background-color: blue;
+}
