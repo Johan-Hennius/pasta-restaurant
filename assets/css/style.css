@@ -23,3 +23,14 @@
 .box-3 {
     background-color: blue;
 }
+
+/*---------------------------------------------------------Title*/
+.title-holder {
+    height: 60vh;
+}
+
+.main-heading {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
