@@ -14,6 +14,7 @@
 /*---------------------------------------------------------General styling*/
 a {
     text-decoration: none;
+    color: black;
 }
 
 ul,
@@ -23,6 +24,32 @@ li {
 
 .pink-bg {
  background-color: #e62e73;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif; 
+}
+
+/*---------------------------------------------------------Navbar*/
+.navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
 
 /*---------------------------------------------------------Title*/
