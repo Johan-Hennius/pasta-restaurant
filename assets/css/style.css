@@ -11,6 +11,20 @@
     box-sizing: border-box;
 }
 
+/*---------------------------------------------------------General styling*/
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.pink-bg {
+ background-color: #e62e73;
+}
+
 /*---------------------------------------------------------Title*/
 .title-holder {
     height: 60vh;
@@ -20,4 +34,13 @@
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     font-size: 3rem;
+}
+
+/*---------------------------------------------------------Panels*/
+.panels-holder {
+    height: 50vh;
+}
+
+.panels {
+    height: 30%;
 }
