@@ -28,18 +28,18 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav">
-                        <li class="navbar-item active">
+                <div class="collapse navbar-collapse float-none text-center justify-content-md-between flex-md-row mx-auto" id="navbarContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="navbar-item mx-3 active">
                             <a href="index.html" class="navlink active" aria-current="page">Home</a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item mx-3">
                             <a href="index.html" class="navlink">Menu</a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item mx-3">
                             <a href="index.html" class="navlink">About</a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item mx-3">
                             <a href="index.html" class="navlink">Contact</a>
                         </li>
                     </ul>
@@ -53,45 +53,62 @@
 
     <!--Main-->
     <main>
-            <!--Hero-->
-            <section class="container">
-                <div class="row title-holder align-items-center justify-content-center">
-                    <!--Restaurant title-->
-                    <div class="col-12 d-flex flex-column">
-                        <h1 class="main-heading text-center">
-                            Pasta Restaurant
-                        </h1>
+        <!--Hero-->
+        <section class="container">
+            <div class="row title-holder align-items-center justify-content-center">
+                <!--Restaurant title-->
+                <div class="col-12 d-flex flex-column">
+                    <h1 class="main-heading text-center">
+                        Pasta Restaurant
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <!--Panels-->
+        <section class="container">
+            <div class="row panels">
+                <div
+                    class="col-4 offset-2 col-sm-4 offset-sm-2 pink-bg d-flex align-items-center justify-content-center">
+                    <a class="mx-auto my-auto" href="book.html">Book Now</a>
+                </div>
+                <div class="col-6 col-sm-6 d-flex flex-column justify-content-center align-items-center text-center">
+                    <p>029 20 123 123</p>
+                    <p>9-5</p>
+                    <p>Mon-Fri</p>
+                </div>
+            </div>
+            <div class="row panels text-center">
+                <div class="col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                    <h6>Spaghetti</h6>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-6 col-sm-4 spaghetti"></div>
+                <div class="col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                    <h6>Tortellini</h6>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-6 col-sm-4 tortellini"></div>
+            </div>
+            <div class="row panels text-center">
+                <div class="col-6 col-sm-4 rigatoni"></div>
+                <div class="col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                    <h6>Rigatoni</h6>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-6 col-sm-4 tagliatelle"></div>
+                <div class="col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                    <h6>Tagliatelle</h6>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-4 offset-4 col-sm-4 offset-sm-8 d-flex align-items-center justify-content-center">
+                    <div class="btn">
+                        Full Menu <span><i class="fa-solid fa-chevron-down"></i></span>
                     </div>
                 </div>
-            </section>
-            <!--Panels-->
-            <section class="container panels-holder">
-                <div class="row panels">
-                    <div class="col-4 offset-2 col-sm-4 offset-sm-2 pink-bg d-flex align-items-center justify-content-center">
-                        <a class="mx-auto my-auto" href="book.html">Book Now</a>
-                    </div>
-                    <div class="col-6 col-sm-6">
-                        <p>029 20 123 123</p>
-                    </div>
-                </div>
-                <div class="row panels">
-                    <div class="col-2"><h4>Spaghetti</h4></div>
-                    <div class="col-2"><img src="" alt=""></div>
-                    <div class="col-2"><h4>Tortellini</h4></div>  
-                    <div class="col-2"><img src="" alt=""></div>
-                </div>
-                <div class="row panels">
-                    <div class="col-2"><img src="" alt=""></div>                  
-                    <div class="col-2"><h4>Rigatoni</h4></div>
-                    <div class="col-2"><img src="" alt=""></div>
-                    <div class="col-2"><h4>Tagliatelle</h4></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 offset-xs-4 col-sm-4 offset-sm-8">
-                        <div class="btn">Full Menu</div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
     </main>
 
     <!--Footer-->
@@ -99,6 +116,8 @@
 
     </footer>
 
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/d490078eea.js" crossorigin="anonymous"></script>
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
