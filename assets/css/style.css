@@ -148,7 +148,9 @@ body{
     color: white;
 }
 
-
+.carousel {
+    width: 90%;
+}
 /*---------------------------------------------------------Specials*/
 .specials-title {
     margin-bottom: 2.5rem;
