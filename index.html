@@ -154,8 +154,8 @@
         </div>
         <!--Menu-->
         <div class="row menu-section my-4 mx-auto">
-            <div class="col-10 d-flex flex-column align-items-center mx-auto px-0">
-                <button class="btn rounded-pill btn-dark book-button menu-button mx-auto mb-4" type="button"
+            <div class="col-10 d-flex flex-column align-items-center mx-auto justify-content-center px-0">
+                <button class="btn rounded-pill btn-dark book-button menu-button mx-auto my-auto" type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapse-menu" aria-expanded="false"
                     aria-controls="collapse-menu">
                     Menu
@@ -198,6 +198,53 @@
                             vel?
                         </p>
                         <p class="card-text">£7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row form-section">
+            <div class="col-12 img-title-wrapper d-flex flex-column align-items-center text-center px-0">
+                <div class="row reservation-img">
+                </div>
+                <div class="row reserve-title">
+                    <h2>Reserve a table</h2>
+                </div>
+                <div class="row form-wrapper my-3">
+                    <div class="col-12">
+                        <form action="#" class="booking-form mb-2">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="fname" placeholder="Full Name"
+                                    aria-label="Full name" required>
+                                <label for="fname">Full name</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control" id="email" placeholder="Email"
+                                    aria-label="Email Address" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <select name="guests" id="guests" class="form-select" aria-label="Number of guests"
+                                    required>
+                                    <option selected>Please choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                                <label for="guests">Number of guests</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="datetime-local" class="form-control" id="date" name="date"
+                                    aria-label="Reservation date and time" required>
+                                <label for="date">Date & time of reservation</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea id="dietary-info" class="form-control" placeholder="Dietary requirements"
+                                    rows="5" aria-label="Dietary requirements" required></textarea>
+                                <label for="dietary-info">Dietary information</label>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

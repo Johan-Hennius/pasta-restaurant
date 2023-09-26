@@ -170,6 +170,37 @@ body{
     min-width: 21rem;
 }
 
+/*---------------------------------------------------------Reserve*/
+.form-section {
+    min-height: 80vh;
+}
+
+.img-title-wrapper {
+    position: relative;
+}
+
+.reserve-title {
+    position: absolute;
+    top: 7rem;
+    color: white;
+}
+
+.reservation-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/tortellini-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+    min-height: 30%;
+    width: 100%;
+}
+
+.form-wrapper {
+    width: 90%;
+}
+
+
 /*-------------------------------------------------------------------------------------Footer*/
 .footer-text {
     font-size: .8rem;
