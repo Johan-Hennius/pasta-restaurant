@@ -86,7 +86,11 @@ body{
     background-position: center center;
     background-size: cover;
     padding: 0;
+}
+
+.hero-title-wrapper {
     position: relative;
+    min-width: 100%;
 }
 
 .hero-title-1 {
@@ -95,6 +99,7 @@ body{
     font-size: 3.75rem;
     letter-spacing: .25rem;
     color: white;
+    position: relative;
     z-index: 99;
     /* background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(3px);
@@ -108,18 +113,14 @@ body{
     font-size: 3.75rem;
     color: #ce998c;
     position: absolute;
-    top: 22.3rem;
+    top: 1.4rem;
+    margin: 0 auto;
 }
 
-.hero-book {
-    position: absolute;
-    top: 28rem;
-}
 
 .hero-book .btn {
     background-color: #ce998c;
-    border-color: #ce998c;
-    
+    border-color: #ce998c;    
 }
 
 /*---------------------------------------------------------Our space*/
@@ -165,6 +166,9 @@ body{
 }
 
 /*---------------------------------------------------------Menu*/
+.card {
+    min-width: 21rem;
+}
 
 /*-------------------------------------------------------------------------------------Footer*/
 .footer-text {
