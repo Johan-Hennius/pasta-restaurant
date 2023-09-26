@@ -80,12 +80,57 @@ body{
 
 .hero {
     height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1) ,rgba(0, 0, 0, 0.5)), url("../images/hero-image.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    padding: 0;
+    position: relative;
 }
+
+.hero-title-1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 3.75rem;
+    letter-spacing: .25rem;
+    color: white;
+    z-index: 99;
+    /* background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 3em; */
+}
+
+.hero-title-2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 3.75rem;
+    color: #ce998c;
+    position: absolute;
+    top: 22.3rem;
+}
+
+.hero-book {
+    position: absolute;
+    top: 28rem;
+}
+
+.hero-book .btn {
+    background-color: #ce998c;
+    border-color: #ce998c;
+    
+}
+
+/*---------------------------------------------------------Our space*/
+.our-space-img {
+    width: 20rem;
+}
+
+.about-button a {
+    color: white;
+}
+
 
 /*---------------------------------------------------------Footer*/
 .footer-text {
