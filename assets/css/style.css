@@ -138,7 +138,7 @@ body{
 }
 
 .specials-background {
-    min-height: 60vh;
+    min-height: 79rem;
     background-color: black;
     position: relative;
 }
@@ -156,12 +156,13 @@ body{
     background-color: white;
     text-align: center;
     min-height: 13.4375rem;
+    max-width: 26rem;
     padding: 1.5rem 1rem;
 }
 
-/* .specials-img {
-    min-height: 12rem;
-} */
+.specials-img {
+    max-width: 26rem;
+}
 
 
 /*---------------------------------------------------------Footer*/
