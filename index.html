@@ -58,82 +58,71 @@
     </main>
 
     <!--Footer-->
-    <footer>
-        <div class="container-fluid">
-            <div class="row row-cols-4 align-items-start justify-content-center">
-                <div class="col-4 w-auto align-self-center footer-logo-container">
-                    <a href="index.html" class="logo text-left">P.R</a>
-                </div>
-                <!--Opening hours                        CHANGE TO MODAL -->
-                <div class="col-4 w-auto dropdown">
-                    <button class="btn dropdown-toggle p-0 border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <h6>Hours</h6>
-                    </button>
-                    <div class="dropdown-menu">
-                        <p class="footer-text dropdown-item"><span class="footer-bold">Monday</span><br>Closed</p>
-                        <p class="footer-text dropdown-item"><span class="footer-bold">Tuseday</span><br>Closed</p>
-                        <p class="footer-text dropdown-item"><span class="footer-bold">Wednesday</span><br>11am - 11pm</p>
-                        <p class="footer-text dropdown-item"><span class="footer-bold">Thursday</span><br>11am - 11pm</p>
-                        <p class="footer-text dropdown-item"><span class="footer-bold">Friday</span><br>11am - 11pm</p>
-                        <p class="footer-text dropdown-item"><span class="footer-bold">Saturday</span><br>11am - 11pm</p>
-                        <p class="footer-text dropdown-item"><span class="footer-bold">Sunday</span><br>11am - 9pm</p>
-                    </div>
-                </div>
-                <!--Address-->
-                <div class="col-4 w-auto">
-                    <h6>Address</h6>
-                    <p class="footer-text">32 Cardiff Way<br>CF1 ABC</p>
-                </div>
-                <!--Social-->
-                <div class="col-4 w-auto">
-                    <h6>Follow</h6>
-                    <a href="https://www.facebook.com" aria-label="Facebook"><i
-                            class="fa-brands fa-facebook-f d-md-none"></i><span
-                            class="d-none d-md-inline"><span class="footer-bold">Facebook</span></span></a>
-                    <br>
-                    <a href="https://www.twitter.com" aria-label="Twitter"><i
-                            class="fa-brands fa-twitter d-md-none"></i><span
-                            class="d-none d-md-inline"><span class="footer-bold"></span>Twitter</span></span></a>
-                    <br>
-                    <a href="https://www.instagram.com" aria-label="Instagram"><i
-                            class="fa-brands fa-instagram d-md-none"></i><span
-                            class="d-none d-md-inline"><span class="footer-bold"></span>Instagram</span></span></a>
-                </div>
+    <footer class="container">
+        <div class="row row-cols-4 align-items-start justify-content-center mb-3">
+            <div class="col-4 w-auto align-self-center footer-logo-container pe-3">
+                <a href="index.html" class="logo text-left">P.R</a>
             </div>
-            <!--Subscribe Modal-->
-            <div class="modal fade" id="subscribe-modal" tabindex="-1" aria-labelledby="Subscribe modal"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title">Subscribe to our newsletter</h2>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="input-group">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email-input"
-                                            placeholder="example@example.co.uk">
-                                        <label for="email-input">Email address</label>
-                                    </div>
-                                    <button class="btn btn-dark" type="submit">Subscribe</button>
+            <!--Opening hours                        CHANGE TO MODAL -->
+            <div class="col-4 w-auto">
+                <h6>Hours</h6>
+                <p class="footer-text"><span class="footer-bold">Mond - Tue</span><br>Closed</p>
+                <p class="footer-text"><span class="footer-bold">Wed - Sun</span><br>11-11</p>
+
+            </div>
+            <!--Address-->
+            <div class="col-4 w-auto">
+                <h6>Address</h6>
+                <p class="footer-text">32 Cardiff Way<br>CF1 ABC</p>
+            </div>
+            <!--Social-->
+            <div class="col-4 w-auto">
+                <h6>Follow</h6>
+                <a href="https://www.facebook.com" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook-f d-md-none"></i><span class="d-none d-md-inline"><span
+                            class="footer-bold">Facebook</span></span></a>
+                <br>
+                <a href="https://www.twitter.com" aria-label="Twitter"><i
+                        class="fa-brands fa-twitter d-md-none"></i><span class="d-none d-md-inline"><span
+                            class="footer-bold"></span>Twitter</span></span></a>
+                <br>
+                <a href="https://www.instagram.com" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram d-md-none"></i><span class="d-none d-md-inline"><span
+                            class="footer-bold"></span>Instagram</span></span></a>
+            </div>
+        </div>
+        <!--Subscribe Modal-->
+        <div class="modal fade" id="subscribe-modal" tabindex="-1" aria-labelledby="Subscribe modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Subscribe to our newsletter</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="input-group">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email-input"
+                                        placeholder="example@example.co.uk">
+                                    <label for="email-input">Email address</label>
                                 </div>
-                            </form>
-                        </div>
+                                <button class="btn btn-dark" type="submit">Subscribe</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!--Contact and Subscribe-->
-            <div class="row align-items-center justify-content-center">
-                <div class="col-5 col-sm-4 offset-sm-3 flex-column justify-content-center">
-                    <h6>Contact</h6>
-                    <p>(029) 20 123 456</p>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <button type="button" class="btn rounded-pill btn-dark subscribe-button w-100"
-                        data-bs-toggle="modal" data-bs-target="#subscribe-modal">Subscribe</button>
-                </div>
+        </div>
+        <!--Contact and Subscribe-->
+        <div class="row align-items-center justify-content-center">
+            <div class="col-6 col-sm-4 offset-sm-3 flex-column justify-content-between contact-footer">
+                <h6>Contact</h6>
+                <p>(029) 20 123 456</p>
+            </div>
+            <div class="col-6 col-sm-5 footer-subscribe-btn">
+                <button type="button" class="btn rounded-pill btn-dark subscribe-button w-100 text-center" data-bs-toggle="modal"
+                    data-bs-target="#subscribe-modal">Subscribe</button>
             </div>
         </div>
     </footer>
