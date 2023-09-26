@@ -23,10 +23,10 @@
         <nav class="navbar navbar-expand-md navbar-background shadow fixed-top">
             <div class="container px-3">
                 <a href="index.html" class="navbar-brand logo">P.R</a>
-                <button class="navbar-toggler btn px-0" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler navbar-dark btn px-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span><i class="fa-solid fa-bars navbar-toggler-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse float-none text-center justify-content-md-between flex-md-row mx-auto my-auto mb-3 mb-md-0"
                     id="navbarContent">
@@ -35,17 +35,18 @@
                             <a href="index.html" class="navlink active" aria-current="page">Home</a>
                         </li>
                         <li class="navbar-item mx-3 mb-1 mb-md-0">
-                            <a href="index.html" class="navlink">Menu</a>
+                            <a href="shop.html" class="navlink">Shop</a>
                         </li>
                         <li class="navbar-item mx-3 mb-1 mb-md-0">
-                            <a href="index.html" class="navlink">About</a>
+                            <a href="about.html" class="navlink">About</a>
                         </li>
                         <li class="navbar-item mx-3 mb-1 mb-md-0">
-                            <a href="index.html" class="navlink">Contact</a>
+                            <a href="contact.html" class="navlink">Contact</a>
                         </li>
                     </ul>
-                    <button class="btn rounded-pill btn-dark book-button">
-                        <a href="book.html">Book now</a>
+                    <button class="btn rounded-pill btn-dark book-button" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">
+                        Book now
                     </button>
                 </div>
             </div>
@@ -62,8 +63,9 @@
                     <h1 class="hero-title-2">Restaurant</h1>
                 </div>
                 <div class="hero-book mt-5">
-                    <button class="btn rounded-pill btn-dark book-button my-3">
-                        <a href="book.html">Book now</a>
+                    <button class="btn rounded-pill btn-dark book-button my-3" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">
+                        Book now
                     </button>
                 </div>
             </div>
@@ -158,7 +160,7 @@
                 <button class="btn rounded-pill btn-dark book-button menu-button mx-auto my-auto" type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapse-menu" aria-expanded="false"
                     aria-controls="collapse-menu">
-                    Menu
+                    Menu <i class="fa-solid fa-chevron-down"></i>
                 </button>
                 <div class="collapse my-4" id="collapse-menu">
                     <div class="card card-body">
@@ -203,14 +205,14 @@
             </div>
         </div>
         <!--Booking Form-->
-        <div class="row form-section">
+        <div class="row form-section mt-3">
             <div class="col-12 img-title-wrapper d-flex flex-column align-items-center text-center px-0">
                 <div class="row reservation-img">
                 </div>
                 <div class="row reserve-title">
                     <h2>Reserve a table</h2>
                 </div>
-                <div class="row form-wrapper my-3">
+                <div class="row form-wrapper mt-3">
                     <div class="col-12">
                         <form action="#" class="booking-form mb-2">
                             <div class="form-floating mb-2">
@@ -240,13 +242,112 @@
                                     aria-label="Reservation date and time" required>
                                 <label for="date">Date & time of reservation</label>
                             </div>
-                            <div class="form-floating mb-2">
+                            <div class="form-floating mb-4">
                                 <textarea id="dietary-info" class="form-control" placeholder="Dietary requirements"
                                     rows="5" aria-label="Dietary requirements" required></textarea>
                                 <label for="dietary-info">Dietary information</label>
                             </div>
                             <div>
                                 <input type="submit" value="Book now" class="btn rounded-pill btn-dark book-button">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Events-->
+        <div class="row flex-column align-items-center events-bg">
+            <div class="col-6 my-auto text-center">
+                <h2>Events</h2>
+            </div>
+            <div class="col-6 card event-card mx-auto px-0 text-center mb-3">
+                <img src="assets/images/tortellini-3.jpg" class="card-img-top" alt="Tortellini">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title mb-2">Tortellini Challenge</h5>
+                    <h6 class="card-subtitle mb-3">11/11/23</h6>
+                    <p class="card-text mb-4">
+                        Can you eat a drum of tortellini?
+                        <br>
+                        Come on down to be in with the chance of winning a lifetime supply of pasta.
+                    </p>
+                    <div class="col-6 col-sm-5 sign-up-btn mb-3">
+                        <button type="button" class="btn rounded-pill btn-dark sign-up-button w-100 text-center mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#event-modal">Sign up</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Event Modal-->
+        <div class="modal fade" id="event-modal" tabindex="-1" aria-labelledby="Event modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Sign up for Tortellini</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="input-group">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email-input"
+                                        placeholder="example@example.co.uk">
+                                    <label for="email-input">Email address</label>
+                                </div>
+                                <button class="btn btn-dark" type="submit">Sign-up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Booking Modal-->
+        <div class="modal" id="booking-modal" tabindex="-1" aria-labelledby="Booking Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Booking</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" class="booking-form mb-2">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="fname" placeholder="Full Name"
+                                    aria-label="Full name" required>
+                                <label for="fname">Full name</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control" id="email" placeholder="Email"
+                                    aria-label="Email Address" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <select name="guests" id="guests" class="form-select" aria-label="Number of guests"
+                                    required>
+                                    <option selected>Please choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                                <label for="guests">Number of guests</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="datetime-local" class="form-control" id="date" name="date"
+                                    aria-label="Reservation date and time" required>
+                                <label for="date">Date & time of reservation</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <textarea id="dietary-info" class="form-control" placeholder="Dietary requirements"
+                                    rows="5" aria-label="Dietary requirements" required></textarea>
+                                <label for="dietary-info">Dietary information</label>
+                            </div>
+                            <div>
+                                <input type="submit" value="Book now" class="btn rounded-pill btn-dark book-button">
+                                <button type="button" class="btn rounded-pill btn-dark" data-bs-dismiss="modal">
+                                    Maybe not
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -261,7 +362,7 @@
             <div class="col-4 w-auto align-self-center footer-logo-container">
                 <a href="index.html" class="logo text-left">P.R</a>
             </div>
-            <!--Opening hours                        CHANGE TO MODAL -->
+            <!--Opening hours-->
             <div class="col-4 w-auto">
                 <h6>Hours</h6>
                 <p class="footer-text"><span class="footer-bold">Mond - Tue</span><br>Closed</p>
@@ -291,7 +392,7 @@
         </div>
         <!--Subscribe Modal-->
         <div class="modal fade" id="subscribe-modal" tabindex="-1" aria-labelledby="Subscribe modal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title">Subscribe to our newsletter</h2>
