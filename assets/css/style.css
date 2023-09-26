@@ -69,7 +69,23 @@ body{
     font-weight: 700;
 }
 
-/*---------------------------------------------------------Title*/
+.navbar-background {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+}
+
+/*---------------------------------------------------------Main*/
+
+/*---------------------------------------------------------Hero*/
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1) ,rgba(0, 0, 0, 0.5)), url("../images/hero-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
 /*---------------------------------------------------------Footer*/
 .footer-text {
