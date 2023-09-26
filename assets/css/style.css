@@ -132,6 +132,38 @@ body{
 }
 
 
+/*---------------------------------------------------------Specials*/
+.specials-title {
+    margin-bottom: 2.5rem;
+}
+
+.specials-background {
+    min-height: 60vh;
+    background-color: black;
+    position: relative;
+}
+
+.specials {
+    position: absolute;
+    top: -1rem;
+}
+
+.specials-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    min-height: 13.4375rem;
+    padding: 1.5rem 1rem;
+}
+
+/* .specials-img {
+    min-height: 12rem;
+} */
+
+
 /*---------------------------------------------------------Footer*/
 .footer-text {
     font-size: .8rem;
