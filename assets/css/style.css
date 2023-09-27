@@ -117,7 +117,7 @@ body{
 /*---------------------------------------------------------Hero*/
 
 .hero {
-    height: 90vh;
+    height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -297,6 +297,33 @@ body{
     border-top-left-radius: 0;
     padding: 1rem;
 }
+
+/*-------------------------------------------------------------------------------------Shop*/
+.shop-hero {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+}
+
+.shop-button {
+    background-color: #ce998c;
+    border-color: #ce998c;  
+    color: white;
+    font-weight: 700;
+    transition: all .8s ease-out;
+}
+
+.shop-button:hover {
+    background-color: rgb(34, 151, 92);
+    border-color: rgb(34, 151, 92);
+    color: white;
+    transform: scale(1.1);
+}
+
 
 /*-------------------------------------------------------------------------------------Footer*/
 .footer-text {

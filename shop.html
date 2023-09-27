@@ -31,11 +31,11 @@
                 <div class="collapse navbar-collapse float-none text-center justify-content-md-between flex-md-row mx-auto my-auto mb-3 mb-md-0"
                     id="navbarContent">
                     <ul class="navbar-nav mx-auto">
-                        <li class="navbar-item mx-3 mb-1 mb-md-0 active">
-                            <a href="index.html" class="navlink active" aria-current="page">Home</a>
-                        </li>
                         <li class="navbar-item mx-3 mb-1 mb-md-0">
-                            <a href="shop.html" class="navlink">Shop</a>
+                            <a href="index.html" class="navlink" aria-current="page">Home</a>
+                        </li>
+                        <li class="navbar-item mx-3 mb-1 mb-md-0 active">
+                            <a href="shop.html" class="navlink active">Shop</a>
                         </li>
                         <li class="navbar-item mx-3 mb-1 mb-md-0">
                             <a href="about.html" class="navlink">About</a>
@@ -53,7 +53,38 @@
         </nav>
     </header>
 
-    
+    <main class="container-fluid">
+        <!--Shop title-->
+        <div class="row shop-title">
+            <div class="col-12 shop-hero d-flex flex-column align-items-center justify-content-center">
+                <div class="hero-title-wrapper d-flex flex-column align-items-center justify-content-center">
+                    <h1 class="hero-title-1">Pasta</h1>
+                    <h1 class="hero-title-2">shop</h1>
+                </div>
+            </div>
+        </div>
+        <!--Shop items-->
+        <div class="row flex-column align-items-center">
+            <div class="col-6 mx-auto card event-card text-center my-3 px-0 mx-auto">
+                <img src="assets/images/spaghetti.jpg" class="card-img-top border-none" alt="Dried spaghetti">
+                <div class="card-body d-flex flex-column align-items-center py-0">
+                    <h5 class="card-title mb-2">Spaghetti</h5>
+                    <h6 class="card-subtitle mb-3">£1 per Kg</h6>
+                    <p class="card-text">Made by a real nonna.</p>
+                    <a class="btn rounded-pill shop-button my-3">Add to cart</a>
+                </div>
+            </div>
+            <div class="col-6 mx-auto card event-card text-center my-3 px-0 mx-auto">
+                <img src="assets/images/rigatoni.jpg" class="card-img-top border-none" alt="Dried spaghetti">
+                <div class="card-body d-flex flex-column align-items-center py-0">
+                    <h5 class="card-title mb-2">Rigatoni</h5>
+                    <h6 class="card-subtitle mb-3">£1 per Kg</h6>
+                    <p class="card-text">Made by another real nonna.</p>
+                    <a class="btn rounded-pill shop-button my-3">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!--Footer-->
     <footer class="container pt-3 pb-5">
