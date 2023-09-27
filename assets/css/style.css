@@ -175,6 +175,7 @@ body{
 .specials {
     position: absolute;
     top: -1rem;
+    max-width: 45rem;
 }
 
 .specials-text-box {
@@ -184,13 +185,18 @@ body{
     align-items: center;
     background-color: white;
     text-align: center;
-    min-height: 13.4375rem;
+    /* min-height: 13.4375rem; */
     max-width: 26rem;
     padding: 1.5rem 1rem;
 }
 
 .specials-img {
     max-width: 26rem;
+}
+
+.specials-dimensions {
+    width: 312px;
+    height: 208px;
 }
 
 /*---------------------------------------------------------Menu*/
@@ -273,4 +279,14 @@ footer h6 {
 
 .subscribe-button {
     font-weight: 700;
+}
+
+/*-------------------------------------------------------------------------------------Media Queries*/
+@media (min-width: 768px) {
+    .specials-background {
+        min-height: 40rem;
+        background-color: black;
+        position: relative;
+        border-radius: 2rem 2rem 0 0;
+    }
 }
