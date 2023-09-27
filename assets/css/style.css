@@ -57,15 +57,21 @@ body{
 .navbar .navbar-toggler-bars,
 .navbar a {
     color: white;
+    transition: all .8s ease-out;
 }
 
 .navbar .logo:hover,
 .navbar .navbar-toggler-bars:hover,
 .navbar a:hover {
     color: #ce998c;
+    transform: scale(1.1);
 }
 
-
+.navbar .logo:focus,
+.navbar .navbar-toggler-bars:focus,
+.navbar a:focus {
+    color: #ce998c;
+}
 
 .navbar-toggler-bars {
     font-size: 1.6rem;
@@ -90,6 +96,8 @@ body{
     color: white;
     font-weight: 700;
 }
+
+
 
 .navbar-background {
     background-color: rgba(0, 0, 0, 0.3);
@@ -151,9 +159,16 @@ body{
     border-color: #ce998c;  
     color: white;
     font-weight: 700;
+    transition: all .8s ease-out;
 }
 
-
+.hero .book-button:hover,
+.booking-form .book-button:hover,
+#navbarContent .btn:hover {
+    background-color: rgb(34, 151, 92);
+    border-color: rgb(34, 151, 92);
+    transform: scale(1.1);
+}
 
 /*---------------------------------------------------------Our space*/
 .our-space {
