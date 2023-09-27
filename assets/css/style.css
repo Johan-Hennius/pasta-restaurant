@@ -206,32 +206,34 @@ body{
 
 /*---------------------------------------------------------Reserve*/
 .form-section {
-    min-height: 80vh;
+    min-height: 50vh;
 }
 
 .img-title-wrapper {
     position: relative;
+    width: 100%;
+    height: 15vh;
 }
 
 .reserve-title {
     position: absolute;
-    top: 7rem;
+    top: 4rem;
     color: white;
+    left: 9%;
 }
 
 .reservation-img {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/tortellini-2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/tortellini-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 0;
-    min-height: 30%;
-    width: 100%;
+    max-height: 300px;
+    max-width: 64.375rem;
 }
 
-.form-wrapper {
-    width: 90%;
+.booking-form {
+    width: 100%;
 }
 
 /*---------------------------------------------------------Event*/
@@ -289,4 +291,5 @@ footer h6 {
         position: relative;
         border-radius: 2rem 2rem 0 0;
     }
+
 }
