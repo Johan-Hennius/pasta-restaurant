@@ -334,6 +334,11 @@ body{
     max-width: 320px;
 }
 
+
+.contact-form {
+    max-width: 90%;
+}
+
 /*-------------------------------------------------------------------------------------Footer*/
 .footer-text {
     font-size: .8rem;
