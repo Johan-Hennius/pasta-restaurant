@@ -45,6 +45,10 @@ body{
     font-family: 'Quicksand', sans-serif; 
 }
 
+.btn {
+    font-weight: 700;
+}
+
 /*-------------------------------------------------------------------------------------Navbar*/
 .logo {
     font-family: 'Libre Baskerville', serif;
@@ -267,6 +271,10 @@ body{
     width: 100%;
 }
 
+.form-control {
+    min-width: 312.5px;
+}
+
 /*---------------------------------------------------------Event*/
 .events-bg {
     background-color: black;
@@ -281,6 +289,13 @@ body{
 
 .event-card {
     width: 13.4375rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.card-img-top {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 1rem;
 }
 
 /*-------------------------------------------------------------------------------------Footer*/
